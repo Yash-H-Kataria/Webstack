@@ -1,0 +1,195 @@
+body {
+  font-size: 16px;
+  color: #45433e;
+  background-color: black;
+  font-family: "Oxygen", sans-serif;
+}
+
+#header-nav {
+  background-color: #e9322e;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding: 20px 0 50px 0;
+}
+
+.navbar-brand h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #fce786;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #222;
+  margin-top: 5px;
+  margin-bottom: 5px !important;
+  line-height: 0.75;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0px;
+}
+#nav-list a {
+  color: #fce786;
+  text-align: center;
+  font-size: 1.2em;
+}
+#nav-list a:hover {
+  background: #0a0a0a;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+#nav-list li hr {
+  margin: 0px !important;
+}
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 2px solid #fce786 !important;
+}
+.navbar-header button.navbar-toggle:hover {
+  border: 2px solid black !important;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.jumbotron
+{
+  width: 100%;
+  text-align: center;
+}
+.jumbotron .banner-text
+{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px black;
+  line-height: 0.75;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fce786;
+  padding: 20px;
+  opacity: 0.9;
+  color: red;
+}
+.jumbotron .banner-text h1,h2
+{
+  opacity: 1;
+}
+#content-box {
+  width: 90%;
+}
+#content-box .content-box-heading h2 {
+  color: #e9322e;
+  text-align: center;
+  font-size: 2.5em !important;
+  margin: 30px;
+}
+#content-box .info-box {
+  position: relative;
+  border: 2px solid white;
+  margin: 10px;
+  height: 360px;
+}
+#content-box .info-box h2 {
+  color: #fce786;
+  text-align: center;
+}
+#content-box .info-box ol
+{
+  margin-left: 20%;
+}
+#content-box .info-box ol h3
+{
+  color: #e9322e;
+  font-size:1.5em;
+}
+
+#content-box .info-box .special
+{
+  margin-left: 25%;
+  color: #e9322e;
+  font-size:1.5em;
+}
+#content-box .info-box ol ul li
+{
+  color: #fce786;
+  font-size: 1.2em;
+}
+#content-box .info-box dl dt
+{
+  text-align: center;
+  color: #e9322e;
+  font-size:1.5em;
+}
+.why-info img
+{
+  margin-top: 30px;
+}
+.why-info .paragraph
+{
+  text-align: justify;
+  margin-top:40px;
+  padding-left: 40px;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .info-box {
+    width: 31%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .info-box {
+      width: 47%;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    .navbar-brand h1 
+    {
+        margin:5px 0px 0px 30px !important;
+    }
+    .info-box {
+        width: 100%;
+      }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding: 20px 0 30px 0;
+      }
+    .navbar-brand h1 
+    {
+        margin:5px 0px 0px 30px !important;
+    }
+    .navbar-collapse
+    {
+        background-color: #3b3838 !important;
+    }
+    .info-box {
+        width: 100%;
+      }
+}
+
+
+
+
+
+
