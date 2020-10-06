@@ -179,6 +179,7 @@ body {
 }
 .footer-btn
 {
+  text-align: center;
   margin: 50px auto 50px auto;
 }
 .footer-btn a
