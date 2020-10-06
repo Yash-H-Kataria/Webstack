@@ -177,6 +177,30 @@ body {
 {
   color: #0a0a0a;
 }
+.footer-btn
+{
+  margin: 50px auto 50px auto;
+}
+.footer-btn a
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: dotted;
+  display: inline-block;
+  font-size: x-large;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.footer-btn a:visited
+{
+  color: purple;
+  background-color: whitesmoke; /* Green */
+}
 
 
 /********** Large devices only **********/
