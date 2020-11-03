@@ -62,14 +62,14 @@ body {
   clear: both;
   margin-top: -30px;
 }
-.jumbotron
+.banner .jumbotron
 {
   width: 100%;
   text-align: center;
   padding: 0;
   box-sizing: border-box;
 }
-.jumbotron .banner-text
+.banner .jumbotron .banner-text
 {
   font-family: "Times New Roman", Times, serif;
   font-size: 10em;
@@ -87,7 +87,7 @@ body {
   color: red;
   box-sizing: border-box;
 }
-.jumbotron .banner-text h1,h2
+.banner .jumbotron .banner-text h1,h2
 {
   opacity: 1;
 }
@@ -202,6 +202,60 @@ body {
   color: purple;
   background-color: whitesmoke; /* Green */
 }
+.regForm
+{
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+.regForm .regtext
+{
+  margin-top: 10% !important;
+  text-align: center;
+}
+.regForm .regtext h1
+{
+  margin: 0%;
+  margin-left: 20%;
+  padding: 10%;
+  display: inline-block;
+  font-size: 40px;
+  border-radius: 10%;
+  background-color: #e9322e;
+  color: #fce786;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #222;
+  line-height: 0.8;
+}
+.regForm table
+{
+  margin: auto;
+  width: 90%;
+}
+.regForm table td,th
+{
+  /* border: 2px solid #4CAF50; */
+  padding: 15px;
+  color: #fce786;
+  text-align: center;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.regForm table td
+{
+  text-align: left;
+  color: #000;
+}
+.regForm table td label
+{
+  color: #fce786;
+}
+.regForm table td ::placeholder
+{
+  color: #0a0a0a;
+}
 
 
 /********** Large devices only **********/
@@ -209,6 +263,7 @@ body {
   .info-box {
     width: 31%;
   }
+
 }
 
 /********** Medium devices only **********/
@@ -224,6 +279,10 @@ body {
     .navbar-brand h1 
     {
         margin:5px 0px 0px 30px !important;
+    }
+    .banner .jumbotron .banner-text
+    {
+      top:60%;
     }
     .info-box {
         width: 100%;
@@ -249,6 +308,10 @@ body {
     .navbar-collapse
     {
         background-color: #3b3838 !important;
+    }
+    .banner .jumbotron .banner-text
+    {
+      top:60%;
     }
     .info-box {
         width: 100%;
