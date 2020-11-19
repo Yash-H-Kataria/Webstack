@@ -8,6 +8,7 @@ function validate_fileupload(fileName)
         document.getElementById("profilepic").value="";
     }
 }
+
 function validate()
 {
     var gender = document.getElementsByName('gender'); 

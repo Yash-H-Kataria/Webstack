@@ -236,9 +236,9 @@ body {
 {
   /* border: 2px solid #4CAF50; */
   padding: 15px;
-  color: #fce786;
+  color: #0a0a0a;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
 
@@ -250,11 +250,32 @@ body {
 }
 .regForm table td label
 {
-  color: #fce786;
+  color: #0a0a0a;
 }
 .regForm table td ::placeholder
 {
   color: #0a0a0a;
+}
+.DomParserTable
+{
+  margin-top: 2%;
+  text-align: center;
+  /* width: 90%; */
+  border-collapse: collapse;
+
+  
+}
+.DomParserTable th,.DomParserTable tr
+{
+  border:2px solid red !important; 
+  color: #fce786 !important;
+}
+.DomParserTable td
+{
+  border:2px solid red !important;  
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
 }
 
 

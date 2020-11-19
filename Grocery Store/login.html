@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Y-Mart Grocery Store - Homepage</title>
+  <title>Y-Mart Grocery Store - Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/MyStyle.css">
+  <link rel="stylesheet" href="css/loginCSS.css">
   <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.svg">
 </head>
 
@@ -61,51 +62,30 @@
     </nav>
   </header>
 
-  <!--Ymart Banner -->
-  <section class="banner">
-    <div class="jumbotron">
-      <!-- <div class="container"> -->
-        <img src="images/homepage-banner.jpg" height="630" width="100%" alt="Ymart Grocery Store Banner">
-        <div class="banner-text">
-          <h1>Y-MART</h1>
-          <h2>All your groceries on your doorsteps.!</h2>
+  <div class="login">
+    <div class="account-login">
+      <h1>Account Login</h1>
+      <form action="" class="login-form">
+        <div class="form-group">
+          <input type="text" id="EmailId" placeholder="Email Id" class="form-control">
         </div>
-      <!-- </div> -->
+        <div class="form-group">
+          <input type="password" id="Password" placeholder="Password" class="form-control">
+        </div>
+        <div class="remember">
+          <label class="custom-checkbox">Remember me
+            <input type="checkbox" id="RememberMe">
+            <span class="checkmark"></span>
+          </label>
+          <a href="#" class="pull-right">Forgot Password?</a>
+        </div>
+        <button class="btn" onclick="Validate()">Login</button>
+        <p>New User? <a href="registration.html">Register Now</a></p>
+      </form>
     </div>
-  </section>
+  </div>
 
-  <!-- Information About The Domain --> 
-  <section class="why-info">
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Why Y-MART.?</h1>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <img src="images/supermarket.svg" class="img-fluid" height="280px" alt="Filled Cart Image" />
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 paragraph">
-          <p>Y-Mart Grocery Store provides a huge range of day to day groceries and appliances in an easy and most
-            convenient
-            mode on your doorsteps with free shipping.
-            Today, the majority of people prefer Y-mart online grocery shopping than visiting physical stores for the
-            goods they want.
-            It is because of the convenience they have for purchasing and making payments. Also it saves both time and
-            money.
-            Besides, people can have the best and desired product in their hands without rushing anywhere.
-            Y-Mart Online Grocery Store provides great deals with a lot of coupon codes to be redeemed to reduce your
-            good amount of
-            money at the time of checkout .</p>
-        </div>
-
-        <!-- XML,XSD,XSLT Example -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
-          <a href="xml/GroceryStore.xml" class="btn btn-primary btn-lg">Get detail information of our Products And Employees (XSD,XSLT) </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
+  <script src="js/loginValidation.js"></script>
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>

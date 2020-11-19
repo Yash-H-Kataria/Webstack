@@ -5,6 +5,10 @@
     <xsl:template match="/">
         <html>
             <head>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <title>Y-Mart Grocery Store - Homepage</title>
+                <link rel="stylesheet" href="../css/bootstrap.css"/>
                 <style>
             div
             {
@@ -139,7 +143,14 @@
                         </xsl:for-each>
                     </table>
                 </div>
+                <br/><br/>
 
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                    <a href="../index.html" class="btn btn-primary btn-lg">Back To Home</a>
+                </div>
+
+                <script src="js/jquery-3.1.0.min.js"></script>
+                  <script src="js/bootstrap.js"></script>   
             </body>
         </html>
     </xsl:template>
