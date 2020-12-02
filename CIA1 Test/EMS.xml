@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="EMSStyling.xsl"?>
+
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="EMSSchema.xsd">
+
+      <!-- 
+
+        Name :- Yash H. Kataria
+        Reg No :- 2047235
+
+        -->
+
+      <!-- List of Employee Details -->
+    
+    <Employee EmpID="1">
+        <EmpName>Yash Kataria</EmpName>
+        <EmpAge>50</EmpAge>
+        <EmpSalary>90000</EmpSalary>
+        <EmpEmailId>katariayash007@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>9512136600</EmpPhoneNumber>
+        <EmpDesignation>CEO</EmpDesignation>
+    </Employee>
+
+    <Employee EmpID="2">
+        <EmpName>Praneet Kaisare</EmpName>
+        <EmpAge>45</EmpAge>
+        <EmpSalary>80000</EmpSalary>
+        <EmpEmailId>kaisarepraneet@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>9898100471</EmpPhoneNumber>
+        <EmpDesignation>CFO</EmpDesignation>
+    </Employee>
+
+    <Employee EmpID="3">
+        <EmpName>Kishan Mistry</EmpName>
+        <EmpAge>25</EmpAge>
+        <EmpSalary>75000</EmpSalary>
+        <EmpEmailId>kishanmistry@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>8469126853</EmpPhoneNumber>
+        <EmpDesignation>Project Head</EmpDesignation>
+    </Employee>
+
+    <Employee EmpID="4">
+        <EmpName>Pulkit Bhagwate</EmpName>
+        <EmpAge>48</EmpAge>
+        <EmpSalary>100000</EmpSalary>
+        <EmpEmailId>bhagwatepulkit@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>9852136600</EmpPhoneNumber>
+        <EmpDesignation>HR</EmpDesignation>
+    </Employee>
+
+    <Employee EmpID="5">
+        <EmpName>Souvik Datta</EmpName>
+        <EmpAge>25</EmpAge>
+        <EmpSalary>88000</EmpSalary>
+        <EmpEmailId>souvikdatta@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>9532347755</EmpPhoneNumber>
+        <EmpDesignation>Manager</EmpDesignation>
+    </Employee>
+
+    <Employee EmpID="6">
+        <EmpName>Joswin D'souza</EmpName>
+        <EmpAge>46</EmpAge>
+        <EmpSalary>120000</EmpSalary>
+        <EmpEmailId>joswin@gmail.com</EmpEmailId>
+        <EmpPhoneNumber>9898136600</EmpPhoneNumber>
+        <EmpDesignation>Project Head</EmpDesignation>
+    </Employee>
+</Company>
