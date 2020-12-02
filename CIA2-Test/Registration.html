@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techovid Registration Page</title>
+    <link rel="stylesheet" href="MyStyle.css" />
+</head>
+
+<body>
+
+    <section class="regForm">
+            <h1>
+                Gateways 2020,TECHOVID Registration
+            </h1>
+            <form action="#">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>
+                            <input type="text" id="Name_Text" placeholder="Enter Your Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email ID</th>
+                        <td>
+                            <input type="text" id="Email_Text" placeholder="Eg: abc@example.com" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Branch</th>
+                        <td>
+                            <input type="radio" id="MCA" name="Branch" value="MCA" />
+                            <label for="MCA">MCA</label>
+                            <input type="radio" id="MCS" name="Branch" value="MCS" />
+                            <label for="MCS">MCS</label>
+                            <input type="radio" id="MDS" name="Branch" value="MDS" />
+                            <label for="MDS">MDS</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>University Name</th>
+                        <td>
+                            <input type="text" id="University_Text" placeholder="Enter Your University Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>State</th>
+                        <td>
+                            <input type="text" id="State_Text" placeholder="Enter Your State" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>
+                            <textarea id="Address_Text" placeholder="Enter Your Address"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Age</th>
+                        <td>
+                            <input type="text" id="Age_Text" placeholder="Enter Your Age" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone No.</th>
+                        <td>
+                            <input type="text" id="Phone_Text" placeholder="Enter Your Phone Number" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Username</th>
+                        <td>
+                            <input type="text" id="Username_Text" placeholder="Enter Your Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input type="password" id="Password_Text" placeholder="Enter Your Password" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="padding-left: 35%;">
+                            <button onclick="Validate()" style="
+                                font-size: 20px;
+                                padding: 10px 20px 10px 20px;
+                                ">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        <!-- </div> -->
+    </section>
+
+    <script src="RegistrationValidation.js"></script>
+</body>
+
+</html>

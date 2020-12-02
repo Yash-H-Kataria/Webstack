@@ -1,0 +1,78 @@
+body
+{
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,135,1) 100%) fixed; */
+}
+.regForm
+{
+    text-align: center !important;
+}
+.regForm table
+{
+  /* border: 2px solid #4CAF50; */
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.regForm table td,.regForm table th
+{
+  border: 3px solid black;
+  padding: 12px;
+  color: #0a0a0a;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.regForm table td
+{
+  text-align: left;
+  color: #000;
+}
+.regForm table td label
+{
+  color: #0a0a0a;
+}
+.regForm table td ::placeholder
+{
+  color: #0a0a0a;
+}
+
+
+.DomParserTable button
+{
+    background-color: slateblue;
+    color: black;
+    padding: 20px;
+    font-size: 25px;
+}
+.DomParserTable table
+{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+.DomParserTable td
+{
+  border: 3px solid black;
+  padding: 20px;
+  color: #0a0a0a;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.DomParserTable th
+{
+  border: 3px solid black;
+  padding: 20px;
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Parser</title>
+  <link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body>
+
+  <section style="margin-top: 2%;" class="DomParserTable">
+    
+    <div style="text-align: center;">
+        <button type="button" onclick="loadXML()">Get Details of All Students</button>
+        <br><br>       
+    </div>
+
+    <div style="text-align: center;">
+        <table id="records"  align="center">
+            
+        </table>
+    </div>
+
+  </section>
+  
+
+  <script>
+    function loadXML()
+    {
+        var xhttp=new XMLHttpRequest();
+        xhttp.onreadystatechange=function()
+        {
+            if(this.readyState==4 && this.status==200)
+            {
+                GetDetails(this);
+            }
+        };
+        xhttp.open("GET","RegistrationXML.xml",true);
+        xhttp.send();
+    }
+
+    function GetDetails(xml)
+    {
+        var i;
+        var xmlDoc=xml.responseXML;
+        
+        var t="<tr><th>Student Name</th><th>College</th></tr>";
+        var x=xmlDoc.getElementsByTagName("CS");
+        for(i=0;i<x.length;i++)
+        {
+            t +="<tr><td>" +
+            x[i].getElementsByTagName("STU-NAME")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("STU-COLLEGE")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+        }
+        
+        document.getElementById("records").innerHTML=t;
+    }
+    </script>
+
+
+</body>
+
+</html>

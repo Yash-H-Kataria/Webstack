@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CHRIST>
+    <CS>
+        <STU-NAME>Yash Kataria</STU-NAME>
+        <STU-BRANCH>MCA</STU-BRANCH>
+        
+        <STU-COLLEGE>Christ University</STU-COLLEGE>
+        <STU-EMAIL>katariayash007@gmail.com</STU-EMAIL>
+    </CS>
+    <CS>
+        <STU-NAME>Praneet Kaisare</STU-NAME>
+        <STU-BRANCH>MCS</STU-BRANCH>
+        
+        <STU-COLLEGE>VNSGU</STU-COLLEGE>
+        <STU-EMAIL>praneet@gmail.com</STU-EMAIL>
+    </CS>
+    <CS>
+        <STU-NAME>Pulkit Bhagwate</STU-NAME>
+        <STU-BRANCH>MCA</STU-BRANCH>
+        
+        <STU-COLLEGE>SRIMCA</STU-COLLEGE>
+        <STU-EMAIL>pulkit@gmail.com</STU-EMAIL>
+    </CS>
+    <CS>
+        <STU-NAME>Souvik Datta</STU-NAME>
+        <STU-BRANCH>MCS</STU-BRANCH>
+        
+        <STU-COLLEGE>PDPU</STU-COLLEGE>
+        <STU-EMAIL>souvik@gmail.com</STU-EMAIL>
+    </CS>
+    <CS>
+        <STU-NAME>Kishan Mistry</STU-NAME>
+        <STU-BRANCH>MDS</STU-BRANCH>
+        
+        <STU-COLLEGE>Jain University</STU-COLLEGE>
+        <STU-EMAIL>kishan@gmail.com</STU-EMAIL>
+    </CS>
+</CHRIST>
