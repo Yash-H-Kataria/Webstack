@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y-Mart Grocery Store - JSON Manipulation</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/MyStyle.css">
+  <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+  <script src="js/Json_Manipulation.js"></script>
+</head>
+
+<body ng-app="MyApp">
+    <header>
+        <nav>
+          <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+    
+                <div class="navbar-brand pull-left  ">
+                  <a href="index.html">
+                    <h1>Y-Mart</h1>
+                  </a>
+                </div>
+    
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+    
+              <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="index.html">
+                      <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+                    <hr class="visible-xs" />
+                  </li>
+                  <li>
+                    <a href="products.html">
+                      <span class="glyphicon glyphicon-th"></span><br class="hidden-xs"> Products</a>
+                    <hr class="visible-xs" />
+                  </li>
+                  <li>
+                    <a href="aboutus.html">
+                      <span class="glyphicon glyphicon-bookmark "></span><br class="hidden-xs"> About Us</a>
+                    <hr class="visible-xs" />
+                  </li>
+                  <li>
+                    <a href="login.html">
+                      <span class="glyphicon glyphicon-user "></span><br class="hidden-xs"> Account</a>
+                    <hr class="visible-xs" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
+      </header>
+
+    <div ng-controller="MyCtrl" align="center">
+
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="text-align: center;">
+            <br>
+            <h4 style="color: #fce786;">Rows to Display : <input type="number"  style="color:black;" step="1" min="0" max="4" ng-model="rowlimit" /></h4>
+            <br \>
+    
+            <h4  style="color: #fce786;">Search : <input type="text"  style="color: black;" placeholder="Seach Employees" ng-model="Search" /></h4>
+            <br \>
+            <table class="DomParserTable" align="center">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                    <th>Salary</th>
+                </tr>
+                <tbody>
+                    <!-- Due To Order By the index gets changed -->
+                    <tr ng-repeat="Employee in Employees | limitTo:rowlimit |filter:Search">
+                        <td>{{Employee.Name | uppercase}}</td>
+                        <td>{{Employee.Age }}</td>
+                        <td>{{Employee.Address | lowercase}}</td>
+                        <td>{{Employee.State }}</td>
+                        <td> {{Employee.City  }}</td>
+                        <td>{{Employee.Phone }}</td>
+                        <td>{{Employee.Salary | currency:"&#8377;":0}}</td>
+                        <td>
+                            <a href="#" ng-click="DeleteEmployee()">Delete</a> |
+                            <a href="#" ng-click="EditEmployee()">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;">
+            
+            <h3 style="color: #fce786;">Employee Details</h3>
+            <br>
+            <table class="DomParserTable" align="center">
+                
+                <tr style="visibility: collapse;">
+                    <td style="padding: 0%; margin: 0%;">Index</td>
+                    <td style="padding: 0%; margin: 0%;"><input type="text" ng-model="index" disabled></td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" ng-model="name"></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input type="text" ng-model="age"></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text" ng-model="address"></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="text" ng-model="state"></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td><input type="text" ng-model="phone"></td>
+                </tr>
+                <tr>
+                    <th>Salary</th>
+                    <td><input type="text" ng-model="salary"></td>
+                </tr>
+                <tr>
+                    <th><input type="button" style="color: black;" value="Add Employee" ng-click="AddEmployee()"></th>
+                    <th><input type="button" style="color: black;" value="Save Employee" ng-click="SaveEmployee()"></th>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
