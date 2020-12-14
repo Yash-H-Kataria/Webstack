@@ -1,0 +1,375 @@
+body {
+  font-size: 16px;
+  color: #45433e;
+  background-color: black;
+  font-family: "Oxygen", sans-serif;
+}
+
+#header-nav {
+  background-color: #e9322e;
+  border-radius: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  padding: 20px 0 50px 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #fce786;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #222;
+  margin-top: 5px;
+  margin-bottom: 5px !important;
+  line-height: 0.75;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+#nav-list a {
+  color: #fce786;
+  text-align: center;
+  font-size: 1.2em;
+}
+#nav-list a:hover {
+  background: #0a0a0a;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+#nav-list li hr {
+  margin: 0px !important;
+}
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 2px solid #fce786 !important;
+}
+.navbar-header button.navbar-toggle:hover {
+  border: 2px solid black !important;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.banner .jumbotron
+{
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner .jumbotron .banner-text
+{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px black;
+  line-height: 0.75;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fce786;
+  padding: 20px;
+  opacity: 0.9;
+  color: red;
+  box-sizing: border-box;
+}
+.banner .jumbotron .banner-text h1,h2
+{
+  opacity: 1;
+}
+#content-box {
+  width: 90%;
+  box-sizing: border-box;
+}
+#content-box .content-box-heading h2 {
+  color: #e9322e;
+  text-align: center;
+  font-size: 2.5em !important;
+  margin: 30px;
+}
+#content-box .info-box {
+  position: relative;
+  border: 2px solid white;
+  margin: 10px;
+  height: 360px;
+  box-sizing: border-box;
+}
+#content-box .info-box h2 {
+  color: #fce786;
+  text-align: center;
+}
+#content-box .info-box ol
+{
+  margin-left: 20%;
+}
+#content-box .info-box ol h3
+{
+  color: #e9322e;
+  font-size:1.5em;
+}
+
+#content-box .info-box .special
+{
+  margin-left: 25%;
+  color: #e9322e;
+  font-size:1.5em;
+}
+#content-box .info-box ol ul li
+{
+  color: #fce786;
+  font-size: 1.2em;
+}
+#content-box .info-box dl dt
+{
+  text-align: center;
+  color: #e9322e;
+  font-size:1.5em;
+}
+.why-info
+{
+  height: 400px !important;
+  box-sizing: border-box;
+}
+.why-info .container
+{
+  padding-top: 10%;
+  box-sizing: border-box;
+}
+
+.why-info img
+{
+  margin-top: 30px;
+}
+.why-info video
+{
+  margin-top: -20px !important;
+}
+.stackitem
+{
+  padding: 0px !important;
+}
+.why-info .paragraph
+{
+  height: 400px !important;
+  text-align: justify;
+  margin-top:40px;
+  padding-left: 40px;
+}
+.brand-carousel
+{
+  box-sizing: border-box;
+}
+.brand-carousel h2
+{
+  color: #0a0a0a;
+}
+.footer-btn
+{
+  text-align: center;
+  margin: 50px auto 50px auto;
+}
+.footer-btn a
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: dotted;
+  display: inline-block;
+  font-size: x-large;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.footer-btn a:visited
+{
+  color: purple;
+  background-color: whitesmoke; /* Green */
+}
+.regForm
+{
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+.regForm .regtext
+{
+  margin-top: 10% !important;
+  text-align: center;
+}
+.regForm .regtext h1
+{
+  margin: 0%;
+  margin-left: 20%;
+  padding: 10%;
+  display: inline-block;
+  font-size: 40px;
+  border-radius: 10%;
+  background-color: #e9322e;
+  color: #fce786;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #222;
+  line-height: 0.8;
+}
+.regForm table
+{
+  margin: auto;
+  width: 90%;
+}
+.regForm table td,th
+{
+  /* border: 2px solid #4CAF50; */
+  padding: 15px;
+  color: #0a0a0a;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.regForm table td
+{
+  text-align: left;
+  color: #000;
+}
+.regForm table td label
+{
+  color: #0a0a0a;
+}
+.regForm table td ::placeholder
+{
+  color: #0a0a0a;
+}
+.DomParserTable
+{
+  margin-top: 2%;
+  text-align: center;
+  /* width: 90%; */
+  border-collapse: collapse;
+
+  
+}
+.DomParserTable th,.DomParserTable tr
+{
+  border:2px solid red !important; 
+  color: #fce786 !important;
+}
+.DomParserTable td
+{
+  border:2px solid red !important;  
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+}
+.Customerrecordtable table
+{
+  margin-left: -30px;
+  width: 100px !important;
+  color: red;
+}
+.Customerrecordtable table th
+{
+  text-align: center;
+  border:2px solid red !important; 
+  color: #fce786 !important;
+  font-size: 18px;
+  padding: 7px;
+}
+.Customerrecordtable table td
+{
+  text-align: center;
+  border:2px solid red !important;  
+  background-color: whitesmoke;
+  color: black;
+  padding: 7px;
+  font-size: 18px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .info-box {
+    width: 31%;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .info-box {
+      width: 47%;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    .navbar-brand h1 
+    {
+        margin:5px 0px 0px 30px !important;
+    }
+    .banner .jumbotron .banner-text
+    {
+      top:60%;
+    }
+    .info-box {
+        width: 100%;
+      }
+      .why-info .paragraph
+      {
+        height: auto !important;
+        text-align: justify;
+        margin-top:20px;
+        padding-left: 20px;
+      }
+  }
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding: 20px 0 30px 0;
+      }
+    .navbar-brand h1 
+    {
+        margin:5px 0px 0px 30px !important;
+    }
+    .navbar-collapse
+    {
+        background-color: #3b3838 !important;
+    }
+    .banner .jumbotron .banner-text
+    {
+      top:60%;
+    }
+    .info-box {
+        width: 100%;
+    }
+    .why-info .paragraph
+    {
+      height: auto !important;
+      text-align: justify;
+      margin-top:20px;
+      padding-left: 20px;
+    }
+}
+
+
+
+
+
+

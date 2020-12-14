@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="GroceryStore">
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="Product" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ProductName" type="xsd:string"/>
+            <xsd:element name="Category" type="xsd:string"/>
+            <xsd:element name="ExpiryDate">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:date">
+                  <xsd:minInclusive value="2020-01-01"/>  <!-- YYYY-MM-DD Format  -->
+                  <xsd:maxInclusive value="2020-12-31"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Price" type="xsd:decimal"/>
+            <xsd:element name="Quantity">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:integer">
+                  <xsd:minExclusive value="0"/> 
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Employee" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="EmployeeName" type="xsd:string"/>
+            <xsd:element name="Salary" type="xsd:integer"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+</xsd:schema> 

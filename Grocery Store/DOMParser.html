@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y-Mart Grocery Store - Dom Parser</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/MyStyle.css">
+  <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.svg">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+
+            <div class="navbar-brand pull-left  ">
+              <a href="index.html">
+                <h1>Y-Mart</h1>
+              </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+              aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="products.html">
+                  <span class="glyphicon glyphicon-th"></span><br class="hidden-xs"> Products</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="aboutus.html">
+                  <span class="glyphicon glyphicon-bookmark "></span><br class="hidden-xs"> About Us</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="login.html">
+                  <span class="glyphicon glyphicon-user "></span><br class="hidden-xs"> Account</a>
+                <hr class="visible-xs" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </header>
+
+  <section style="margin-top: 2%;">
+    
+    <!-- Employee Records Button-->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: center;">
+        <button type="button" onclick="loadXML('Employee')" class="btn btn-primary btn-lg">Get Details of All Employees</button>
+        <br><br>       
+    </div>
+
+    <!-- Product Records Button -->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: center;">
+        <button type="button" onclick="loadXML('Products')" class="btn btn-primary btn-lg">Get Details of All Products</button>
+        <br><br>
+    </div>
+
+    <!-- Records Table -->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+        <table id="records" class="DomParserTable" align="center">
+            
+        </table>
+    </div>
+
+  </section>
+  
+  <!-- DOM Parser Script -->
+  <script>
+    function loadXML(Caller)
+    {
+        var xhttp=new XMLHttpRequest();
+        xhttp.onreadystatechange=function()
+        {
+            if(this.readyState==4 && this.status==200 && Caller=='Employee')
+            {
+                GetDetails(this,'Employee');
+            }
+            else if(this.readyState==4 && this.status==200 && Caller=='Products')
+            {
+                GetDetails(this,'Products');
+                // alert('Products');
+            } 
+        };
+        xhttp.open("GET","xml/GroceryStore.xml",true);
+        xhttp.send();
+    }
+
+    function GetDetails(xml,Caller)
+    {
+        var i;
+        var xmlDoc=xml.responseXML;
+        if(Caller=='Employee')
+        {
+            var t="<tr><th>Employee Name</th><th>Salary</th></tr>";
+            var x=xmlDoc.getElementsByTagName("Employee");
+            for(i=0;i<x.length;i++)
+            {
+                t +="<tr><td>" +
+                x[i].getElementsByTagName("EmployeeName")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Salary")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+        }
+        else if(Caller=='Products')
+        {
+            var t="<tr><th>Product Name</th><th>Category</th><th>Expiry Date</th><th>Price</th><th>Quantity</th></tr>";
+            var x=xmlDoc.getElementsByTagName("Product");
+            for(i=0;i<x.length;i++)
+            {
+                t +="<tr><td>" +
+                x[i].getElementsByTagName("ProductName")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                  x[i].getElementsByTagName("Category")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                  x[i].getElementsByTagName("ExpiryDate")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                  x[i].getElementsByTagName("Price")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Quantity")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+        }
+
+        document.getElementById("records").innerHTML=t;
+    }
+    </script>
+
+
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

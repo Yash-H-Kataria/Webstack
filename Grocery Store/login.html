@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Y-Mart Grocery Store - Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/MyStyle.css">
+  <link rel="stylesheet" href="css/loginCSS.css">
+  <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.svg">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+
+            <div class="navbar-brand pull-left  ">
+              <a href="index.html">
+                <h1>Y-Mart</h1>
+              </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+              aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="products.html">
+                  <span class="glyphicon glyphicon-th"></span><br class="hidden-xs"> Products</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="aboutus.html">
+                  <span class="glyphicon glyphicon-bookmark "></span><br class="hidden-xs"> About Us</a>
+                <hr class="visible-xs" />
+              </li>
+              <li>
+                <a href="login.html">
+                  <span class="glyphicon glyphicon-user "></span><br class="hidden-xs"> Account</a>
+                <hr class="visible-xs" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </header>
+
+  <div class="login">
+    <div class="account-login">
+      <h1>Account Login</h1>
+      <form action="" class="login-form">
+        <div class="form-group">
+          <input type="text" id="EmailId" placeholder="Email Id" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" id="Password" placeholder="Password" class="form-control">
+        </div>
+        <div class="remember">
+          <label class="custom-checkbox">Remember me
+            <input type="checkbox" id="RememberMe">
+            <span class="checkmark"></span>
+          </label>
+          <a href="#" class="pull-right">Forgot Password?</a>
+        </div>
+        <button class="btn" type="button" onclick="Validate()">Login</button>
+        <p>New User? <a href="registration.html">Register Now</a></p>
+
+        <!-- Registration Through PHP and MYSQL -->
+        <p>Customer Registration? <a href="PHP/Customer_Registration_Using_PHP.php">Register Now</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/loginValidation.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
